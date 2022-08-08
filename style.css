@@ -1,5 +1,6 @@
 body{
 margin: 0;
+font-family:'Times New Roman';
 }
 
 .background-image1{
@@ -9,26 +10,31 @@ margin: 0;
     background-image:url(https://www.rlogical.com/wp-content/uploads/2019/05/android.png);
     background-repeat: no-repeat;
     position: absolute;
-    margin-left: 29.5rem;
-    margin-top:-4rem
+    display: flex;
+    margin-left: 45%;
+    margin-top: 2%;
+    min-width: 400px;
+    max-width: 1000px;
     
 }
-
+.openingtext{
+    margin-left: 15%;
+}
 .header{
     font-weight: bold;
-    padding-left:11rem;
-
-    font-size: 3rem;
+    padding-left:95%;
+    margin-top: -2%;
+    font-size: 3.8rem;
     color: white;
-        font-family:'Flash Back - Demo', sans-serif;
+        font-family:'Times New Roman';
         box-sizing: border-box;
         text-decoration: underline;
+        display: flex;
 }
 
 .navbar{
     position: fixed !important;
-    margin-top: -80px;
-    height: 5rem;
+    height: 9%;
     position:fixed;
     background-color: #6097BF;
     width: 100%;
@@ -36,37 +42,34 @@ margin: 0;
     align-items: center;
     justify-content: space-between;
 }
+
 .all-push{
     display: flex;
-    margin-right: 12rem;
-    margin-top: 0.4rem;
+    margin-right: 13%;
 
 }
 .push{
-    margin-top: -20px;
-    font-size: 1.3rem;
+    margin-top: -0.7rem;
+    font-size: 1rem;
     text-decoration: none;
     color: white;
     display: block;
     letter-spacing: .15rem;
-    padding: 2rem 1.4rem;
-    font-family:monospace;
+    padding: 2rem 2rem;
+    font-family:'Times New Roman';
     
 }
 
 .text{
-    padding-top: 7rem;
-    margin-top: 5rem;
-    margin-left: 7.4rem;
-    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 17%;
+    font-family:'Times New Roman';
     color: white;
     font-size: 4rem;
-    margin-bottom: 1px;
+    margin-bottom: -10px;
 }
 
 .par{
-    margin-left: 7.5rem;
-    margin-top: 1px;
+    padding-bottom:1rem;
     letter-spacing: .50rem;
     color: white;
 }
@@ -76,7 +79,133 @@ margin: 0;
     padding-bottom: 1rem !important;
     padding-right: 3.3rem !important;
     padding-left: 4rem !important;
-    margin-left: 8rem;
-    margin-top: 1px;
     margin-bottom: 4rem;
+}
+.about-me{
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    flex-wrap:nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.info-about-me{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.header2{
+    color: black;
+    font-family:'Times New Roman';
+    font-weight: bold;
+    letter-spacing: .20rem;
+}
+.par2{
+    width: 40%;
+    font-family:'Times New Roman';
+}
+.btn-secondary{
+    width: 15%;
+    border-radius: 0% !important;
+    font-family:'Times New Roman' !important;
+    letter-spacing: .09rem;
+    padding: 0.5% !important;
+}
+
+.img2{
+    margin-left: -60%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.imgwithbackground{
+    background-color: #6097BF;
+    display: flex;
+}
+.service-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.par3{
+    font-family: 'Times New Roman';
+    font-size: smaller;
+    width: 50%;
+    text-align: center;
+}
+
+.services-info{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.service{
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    transition: .3s ease transform;
+    margin: 5px;
+}
+
+.service-card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: .3s ease transform;
+    display: block;
+}
+
+.service-front{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 89, 255, 0.13);
+    padding: 10px;
+}
+
+.service-front-heading{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.service-back{
+    transform: rotateY(180deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 89, 255, 0.13);
+    padding: 10px;
+}
+.fa-3x{
+    font-size: 2.5rem !important;
+    color: black !important;
+    margin-bottom: 10px;
 }
