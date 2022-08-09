@@ -1,211 +1,347 @@
-body{
-margin: 0;
-font-family:'Times New Roman';
+body {
+    argin: 0;
+  font-family: "Times New Roman";
+  overflow-x: hidden;
 }
 
-.background-image1{
-    background-color: #6097BF;
+.background-page-1 {
+  background-color: #6097bf;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100vw;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3%;
 }
-.android{
-    background-image:url(https://www.rlogical.com/wp-content/uploads/2019/05/android.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    display: flex;
-    margin-left: 45%;
-    margin-top: 2%;
-    min-width: 400px;
-    max-width: 1000px;
-    
-}
-.openingtext{
-    margin-left: 15%;
-}
-.header{
-    font-weight: bold;
-    padding-left:95%;
-    margin-top: -2%;
-    font-size: 3.8rem;
-    color: white;
-        font-family:'Times New Roman';
-        box-sizing: border-box;
-        text-decoration: underline;
-        display: flex;
-}
-
-.navbar{
-    position: fixed !important;
-    height: 9%;
-    position:fixed;
-    background-color: #6097BF;
+/* NAVBAR CODE START */
+.topnav {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.all-push{
-    display: flex;
-    margin-right: 13%;
-
-}
-.push{
-    margin-top: -0.7rem;
-    font-size: 1rem;
+    position: fixed;
+    overflow: hidden;
+    background-color: #6097bf;
+    color: white;
     text-decoration: none;
-    color: white;
-    display: block;
-    letter-spacing: .15rem;
-    padding: 2rem 2rem;
-    font-family:'Times New Roman';
-    
-}
-
-.text{
-    padding-top: 17%;
-    font-family:'Times New Roman';
-    color: white;
-    font-size: 4rem;
-    margin-bottom: -10px;
-}
-
-.par{
-    padding-bottom:1rem;
-    letter-spacing: .50rem;
-    color: white;
-}
-.btn-primary{
-    letter-spacing: .50rem;
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-    padding-right: 3.3rem !important;
-    padding-left: 4rem !important;
-    margin-bottom: 4rem;
-}
-.about-me{
-    margin: 0 auto;
+    z-index: 2;
     display: flex;
-    align-content: center;
-    flex-wrap:nowrap;
-    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
     align-items: center;
+  }
+.topnav a:hover{
+    color: white;
 }
 
-.info-about-me{
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+  
+  .push {
+    display: inline-block;
+    position: relative;
+    
+  }
+  
+  .push:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .push:hover:after {
+    color: white;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  @media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: flex;
+      text-align: left;
+    }
+  }
+
+  .header{
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: "Times New Roman";
+    letter-spacing: .2rem;
+    text-decoration: underline;
+  }
+/* NAVBAR CODE END */
+/* PORTFOLIO TEXT CODE START */
+.header-container{
+  padding-left: 10%;
+}
+
+.header-text {
+  padding-top: 15%;
+  font-family: "Times New Roman";
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: -10px;
+}
+
+.header-par {
+  font-family: "Times New Roman";
+  font-size: 0.75rem;
+  padding-bottom: 1rem;
+  letter-spacing: 0.5rem;
+  color: white;
+}
+.header-btn {
+  letter-spacing: 0.5rem;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-right: 3.3rem !important;
+  padding-left: 4rem !important;
+}
+
+.android-image {
+  background-image: url(https://www.rlogical.com/wp-content/uploads/2019/05/android.png);
+  background-repeat: no-repeat;
+}
+/* PORTFOLIO CODE END */
+/* ABOUT ME CODE START */
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+  .about-me-text {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    position: relative;
+    right: 65px;
+
 }
-.header2{
+.header2 {
+  color: black;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+ 
+}
+.par2 {
+    font-size: 0.8rem;
+  width: 33%;
+  font-family: "Times New Roman";
+}
+.resume {
+  width: 30%;
+  border-radius: 0% !important;
+  font-family: "Times New Roman" !important;
+  letter-spacing: 0.09rem;
+  padding: 0.5% !important;
+  display: flex;
+}
+
+.img2 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 36vw;
+    height: 39vh;
+    padding-right: 6rem;
+    position: relative;
+    right: 175px;
+}
+
+
+.imgwithbackground::after {
+    content: "";
+    background: rgba(15, 118, 228, 0.157);
+    width: 18%;
+    height: 39vh;
+    position: absolute;
+    right: 250px;
+    z-index: -1;
+}
+
+
+/* ABOUT ME CODE END */
+/* SERVICE CODE START */
+.service-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.par3 {
+  font-family: "Times New Roman";
+  font-size: smaller;
+  width: 50%;
+  text-align: center;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: rgba(0, 89, 255, 0.13);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-card-back {
+    background-color:rgba(0, 89, 255, 0.13);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .par6{
+    font-family:'Times New Roman';
+    font-size: 0.8rem;
+    color: black;
+  }
+
+  .header1{
+    font-weight: bold;
     color: black;
     font-family:'Times New Roman';
-    font-weight: bold;
-    letter-spacing: .20rem;
-}
-.par2{
-    width: 40%;
-    font-family:'Times New Roman';
-}
-.btn-secondary{
-    width: 15%;
-    border-radius: 0% !important;
-    font-family:'Times New Roman' !important;
-    letter-spacing: .09rem;
-    padding: 0.5% !important;
-}
+  }
 
-.img2{
-    margin-left: -60%;
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
+  .header3{
+  font-weight: bold;
+  color: rgb(255, 255, 255) !important;
+  font-family:'Times New Roman';}
 
-.imgwithbackground{
-    background-color: #6097BF;
-    display: flex;
-}
-.service-container{
+
+/* SERVICE CODE END */
+/* HIRE ME CODE START */
+.hire-me{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
     align-items: center;
-}
-.par3{
-    font-family: 'Times New Roman';
-    font-size: smaller;
-    width: 50%;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.services-info{
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-direction: column;
+.hire-btn{
+    letter-spacing: .2rem;
+    font-family:'Times New Roman'!important;
+    width: 12%;
+    border-radius: 0% !important;
+    padding: 1.1% !important;
 }
-
-.service{
-    width: 100%;
-    min-height: 300px;
-    position: relative;
-    transition: .3s ease transform;
-    margin: 5px;
+.header4{
+    color: black;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    font-family:'Times New Roman'!important;
 }
-
-.service-card{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transform-style: preserve-3d;
-    transition: .3s ease transform;
-    display: block;
+/* HIRE ME CODE END */
+/* SOCIALS CODE START */
+.contact-container{
+    letter-spacing: .1rem;
+    background-color: black;
+    color: white;
+    font-family:'Times New Roman'!important;
 }
-
-.service-front{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
+.contact-text{
+    padding-top: 75px;
+    padding-bottom: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 89, 255, 0.13);
-    padding: 10px;
 }
-
-.service-front-heading{
-    font-size: 2.5rem;
-    text-transform: capitalize;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.service-back{
-    transform: rotateY(180deg);
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
+.social-icons{
+    color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 89, 255, 0.13);
-    padding: 10px;
 }
-.fa-3x{
-    font-size: 2.5rem !important;
-    color: black !important;
-    margin-bottom: 10px;
+.mail{
+    margin: 0px;
+}
+.follow{
+    padding-top: 30px;
+}
+
+.fab{
+    color: white;
+    margin: 8px;
 }
