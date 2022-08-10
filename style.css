@@ -34,7 +34,7 @@ label.logo{
 }
 nav ul{
   float: right;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 nav ul li{
   display: inline-block;
@@ -317,6 +317,7 @@ align-items: center;
 /* SERVICE CODE END */
 /* HIRE ME CODE START */
 .hire-me{
+  
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -328,17 +329,33 @@ align-items: center;
 }
 
 .hire-btn{
-    letter-spacing: .2rem;
-    font-family:'Times New Roman'!important;
-    width: 12%;
-    border-radius: 0% !important;
-    padding: 1.1% !important;
+  width: 23%;
+  letter-spacing: .2rem;
+  font-family: 'Times New Roman'!important;
+  border-radius: 0% !important;
+  padding: 1.1% !important;
+}
+
+@media (max-width: 535px){
+.hire-btn{
+  width: 40%;
+}
+
+ul{
+  width: 40%;
+}
+nav ul li a{
+  font-size: 13px;
+
+}
+
 }
 .header4{
     color: black;
     font-weight: bold;
     letter-spacing: .1rem;
     font-family:'Times New Roman'!important;
+    text-align: center;
 }
 /* HIRE ME CODE END */
 /* SOCIALS CODE START */
