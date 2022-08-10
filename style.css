@@ -115,8 +115,7 @@ section{
 .home-container{
   color: white;
   background-color: #6097bf;
-  height: auto;
-  padding: 13vh 0%;
+  height:100vh;
 display: flex;
 justify-content: center;
 flex-direction: row;
@@ -198,6 +197,16 @@ align-items: center;
   left: 35%;
  }
 
+ #image-container::after{
+  background-color:#1b9bff;
+  position: absolute;
+  width: 40%;
+  height: 75%;
+  content: "";
+  z-index: -1;
+  opacity: 10%;
+  left: 60%;
+ }
 
 
  @media (max-width: 858px){
@@ -206,7 +215,7 @@ align-items: center;
     flex-direction: column-reverse;
   }
 .header{
-  margin-top: 30px;
+  margin-top: 5rem;
   width: 100%;
 }
 .par{
@@ -218,7 +227,53 @@ align-items: center;
   width: 70%;
   height: 70%;
 }
+#image-container::after{
+  background-color:#1b9bff;
+  position: absolute;
+  width: 35%;
+  height: 45%;
+  content: "";
+  z-index: -1;
+  left: 43%;
  }
+ .resume{
+  width: 80%;
+ }
+ }
+
+ @media (max-width: 666px){
+  #image-container::after{
+    background-color:#1b9bff;
+    position: absolute;
+    width: 35%;
+    height: 33%;
+    left: 43%;
+   }
+
+
+ }
+
+ @media (max-width: 500px){
+  #image-container::after{
+    background-color:#1b9bff;
+    position: absolute;
+    width: 35%;
+    height: 25%;
+    left: 43%;
+   }
+
+
+ }
+ @media (max-width: 414px){
+  #image-container::after{
+    background-color:#1b9bff;
+    position: absolute;
+    width: 35%;
+    height: 19%;
+    left: 43%;
+   }
+
+  }
 /* ABOUT ME CODE END */
 /* SERVICE CODE START */
 .service-container {
@@ -341,9 +396,6 @@ align-items: center;
   width: 40%;
 }
 
-ul{
-  width: 40%;
-}
 nav ul li a{
   font-size: 13px;
 
